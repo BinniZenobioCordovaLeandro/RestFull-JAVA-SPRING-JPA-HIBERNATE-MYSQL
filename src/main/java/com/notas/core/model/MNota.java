@@ -5,6 +5,12 @@ import java.io.Serializable;
 import com.notas.core.entity.Nota;
 
 public class MNota implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public MNota() {}
 	
 	public MNota(Nota nota) {
@@ -14,7 +20,6 @@ public class MNota implements Serializable {
 		this.contenido = nota.getContenido();
 	}
 	public MNota(long id, String nombre, String titulo, String contenido) {
-		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.titulo = titulo;

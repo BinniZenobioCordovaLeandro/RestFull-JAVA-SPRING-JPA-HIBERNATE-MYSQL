@@ -7,14 +7,23 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Table(name="NOTA")
 @Entity
+//@XmlRootElement too aplication input XML
+
 public class Nota implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+
 	public Nota() {}
 	
 	public Nota(long id, String nombre, String titulo, String contenido) {
-		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.titulo = titulo;
